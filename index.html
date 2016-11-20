@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="@mediaScreen.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.0.0.min.js"></script>
+</head>
+
+<body>
+    <!--    SECTION 1-->
+    <section id="section_1">
+        <div class="container">
+            <!--    HRADER-->
+            <header>
+                <div class="header--container">
+                    <div class="header--element logo">
+                        <a href=#><img src="img/logo.png"></a>
+                    </div>
+                    <div class="header--element menu">
+                        <ul id="header--element_menu" class="nav">
+                            <li><a href=#>About</a></li>
+                            <li><a href=#>How It Works</a></li>
+                            <li><a href=#>Services</a></li>
+                            <li><a href=#>FAQ</a></li>
+                            <li><a href=#>Contact</a></li>
+                            <li>
+                                <input type="text" id="myInput" placeholder="Search Website"> </li>
+                            <li class="hideMenu"> <p  style="color:white; font-size:30px;" onclick="myFunction()">☰</p> </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!--    HEADER END-->
+            <div class="main__text">
+                <h1>Designs your eyeballs<br>will thank you for </h1>
+                <div class="main__text__button__container">
+                    <div class="main__text__button"> <a href=#>Get Started Today</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    SECTION 2-->
+    <section id="section_2">
+        <div class="container">
+            <div class="section_2__text">
+                <h1>OUR SERVICES</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque. Fusce condimentum dolor justo, ac tristique diam iaculis at.</p>
+            </div>
+            <div class="section_2__boxes">
+                <div class="container--box">
+                    <div class="box"> </div>
+                    <div class="box">
+                        <div class="box__inside"> <img src="img/tools.png">
+                            <p>CRM Customization</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__inside"> <img src="img/ch.png">
+                            <p>Business Intelligence</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__inside"> <img src="img/list.png">
+                            <p>Data Normalization</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__inside"> <img src="img/volume.png">
+                            <p>Digital Marketing</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__inside"> <img src="img/part.png">
+                            <p>Data Acquisition</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box__inside"> <img src="img/light.png">
+                            <p>Product Development</p>
+                        </div>
+                    </div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    SECTION 3-->
+    <section id="section_3">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Experience the rush today</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                <br>dolore magna aliqua consectetur adipisicing elit.</p>
+            <div class="main__text__button"> <a href=#>Get Started Today</a>
+                <p>Lorem ispsum dolor sit amet, consectetur</p>
+            </div>
+        </div>
+    </section>
+    <!--    SECTION 4-->
+    <section id="section_4">
+        <div class="section_4--container">
+            <div class="section_4--container__img"><img src="img/img1.jpg"></div>
+            <div class="section_4--container__txt">
+                <p> <span>A heading is what you need here</span>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br>
+                <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        
+//        BOX EFFECTS
+        $(".box").mouseenter(function () {
+            $(this).css({
+                background: "#28282e"
+            }).children().children(":last-child").css({
+                color: "white"
+            })
+        })
+        $(".box").mouseleave(function () {
+            $(this).css({
+                background: "white"
+            }).children().children(":last-child").css({
+                color: "black"
+            })
+        })
+        
+        
+//       MENU
+        
+        function myFunction() {
+    var menu = document.getElementById("header--element_menu");
+    if (menu.className === "nav") {
+        menu.className += " responsive";
+    } else {
+        menu.className = "nav";
+    }
+}
+    </script>
+</body>
+
+</html>
